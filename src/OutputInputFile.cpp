@@ -16,7 +16,7 @@ void writeFile(complexList list, int N)
 
 }
 
-complexList readFile(std::string fileName)
+complexList readFile(const std::string& fileName)
 {
     complexList inputList;
     std::ifstream inputFile;
