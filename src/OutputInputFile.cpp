@@ -79,13 +79,10 @@ std::vector<std::pair<Z, int>> readFile(const std::string& fileName)
     inputFile >> size;
     std::cout << size << std::endl;
 
-    for (int i=0; i<size; i++)
+    Z complexPart;
+    int count;
+    while (inputFile >> complexPart >> count)
     {
-        Z complexPart;
-        int count;
-
-        inputFile >> complexPart >> count;
-        
         inputVector.push_back(std::make_pair(complexPart, count));
     }
 
